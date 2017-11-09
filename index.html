@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="author" content="Urbolabs">
+
+        <title>Urbo - build your world!</title>
+
+        <meta name="title" content="Urbo - build your world!">
+        <meta name="description" content="Urbo - build your world! Urbo application.">
+        <meta name="keywords" content="Urbo, Urbolabs, Urbo app, urbolabs app, urbo application, city builder">
+
+        <meta name="HandheldFriendly" content="true">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+        <!--link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" media="screen" /-->
+        <!--link rel="stylesheet" type="text/css" href="css/mainpage-theme.css" media="screen" /-->
+        <link rel="stylesheet" type="text/css" href="css/mainpage.css" media="screen">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <script type="text/javascript">
+            var isMobile = false; //initiate as false
+            var navbarIsTransparent = false;
+        </script>
+    </head>
+    <body>
+        <div class="navbar navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle btn btn-navbar" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar" style="background: #f7f7f7;"></span>
+                        <span class="icon-bar" style="background: #f7f7f7;"></span>
+                        <span class="icon-bar" style="background: #f7f7f7;"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="../storage.googleapis.com/urbolabs.com/header-logo.png" alt="Urbo"></a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav ">
+                        <li><a href="http://urbolabs.com/for-users">Users</a></li> <!---->
+                        <li><a href="http://urbolabs.com/for-businesses">Businesses</a></li> <!---->
+                        <!--li><a href="#" id="publish">Blog</a></li-->
+                        <li><a href="mailto:info@urbolabs.me">Contact Us</a></li> <!---->
+                    </ul>
+                    
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown hidden-xs">
+                            <p class="navbar-btn " data-toggle="dropdown">
+                                <a class="btn register-btn" href="#" >Become a Partner</a>
+                            </p>
+                            <div class="dropdown-menu" style="padding:10px; width:300px;">
+                                <form accept-charset="utf-8" id="registrationForm">
+    <div class="form-group">
+        <p style="color:#dd5044;" id="registration-msg"></p>
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" id="disaply_name" placeholder="Display name">
+    </div>
+    <div class="form-group">
+        <input type="email" class="form-control" id="email" placeholder="Email address">
+    </div>
+    <div class="form-group">
+        <input type="password" class="form-control" id="pwd" placeholder="Password">
+    </div>
+    <button class="btn register-btn" id="submit-registration-btn">Submit</button>
+</form>
+                            </div>
+                        </li>
+                        <li class="visible-xs-block">
+                            <p class="navbar-btn ">
+                                <a class="btn register-btn" href="http://urbolabs.com/became-partner" >Become a Partner</a>
+                            </p>
+                        </li>
+                        
+                        <li class="dropdown hidden-xs">
+                            <a class="dropdown-toggle" href="#" data-toggle="dropdown"> <span class="glyphicon glyphicon-user"></span> Sign In</a>
+                            <div class="dropdown-menu" style="padding:10px; width:300px;">
+                                <form>
+    <div class="form-group">
+        <p style="color:#dd5044;" id="login-msg"></p>
+    </div>
+    <div class="form-group" id="loginForm">
+        <input type="email" class="form-control" id="useremail" placeholder="Email address">
+    </div>
+    <div class="form-group">
+        <input type="password" class="form-control" id="userpassword" placeholder="Password">
+    </div>
+    <button type="submit" class="btn register-btn" id="submit-login-btn">Submit</button>
+</form>
+                            </div>
+                        </li>
+                        <li class="visible-xs-block">
+                            <a class="" href="http://urbolabs.com/login"><span class="glyphicon glyphicon-user"></span> Sign In</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-top-main hidden-xs hidden-sm">
+            <!-- header image -->
+            <div class="header-slogan animate-bottom" style="">
+                <h1 align="center">Welcome to Urbo</h1>
+                <p align="center" class="lead">Who knew the next big thing would be in your pocket?</p>
+                <p align="center"><a href="#" class="btn btn-whitecorner" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-envelope"></span> Sign up for updates</a></p>
+            </div>
+        </div>
+        <div class="header-top-mobile visible-xs visible-sm">
+            <img class="img-responsive" src="../storage.googleapis.com/urbolabs.com/header_bg_mainpage.jpg" style="postition:relative;">
+            <div class="header-slogan" style="position:absolute; top:30%; left: 0; width: 100%; padding-top:0px;">
+                <h1 align="center" class="visible-sm">Welcome to Urbo</h1>
+                <p align="center" class="lead">Who knew the next big thing would be in your pocket?</p>
+                <p align="center"><a href="#" class="btn btn-whitecorner" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-envelope"></span> Sign up for updates</a></p>
+            </div>
+        </div>
+            
+        <div class="center-title">
+            <div class="heading-title container">
+                <h2 class="h2-section-title">Our Mission</h2>
+                <p>Urbo streamlines the notifications on your phone, while saving time, money and letting you focus on the things you care about.</p>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="row embed-responsive embed-responsive-16by9 video-container">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0kzWwnEnkQY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+                
+            <div class="center-title">
+                <div class="heading-title container">
+                    <h2 class="h2-section-title ">The Important Stuff</h2>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            <div class="row mainpage-main-content">
+                <div class="col-md-6">
+                    <div class="row mainpage-row-item">
+                        <div class="clearfix"></div>
+                        <img class="img-circle pull-left img-responsive mainpage-rowicon" src="../storage.googleapis.com/urbolabs.com/icons/ic_notification.png"  alt="Urbo - build your world. By Urbolabs.">
+                        <h3>Clean up the mess!</h3>
+                        <div class="row visible-xs-block" style="padding:15px; padding-top:0px;"><p>Phones are overflowing with irrelevant notifications and deals you&#39;ll never take advantage of - with user-initiated communication channels, you have all the control.</p></div>
+                        <p class="hidden-xs">Phones are overflowing with irrelevant notifications and deals you&#39;ll never take advantage of - with user-initiated communication channels, you have all the control.</p>
+                    </div>
+                    <div class="row mainpage-row-item">
+                        <div class="clearfix"></div>
+                        <img class="img-circle pull-left img-responsive mainpage-rowicon" src="../storage.googleapis.com/urbolabs.com/icons/ic_money.png" alt="Urbo - build your world. By Urbolabs.">
+                        <h3>Save that money!</h3>
+                        <div class="row visible-xs-block" style="padding:15px; padding-top:0px;"><p>Drag a location onto your map to stay up to date on all deals, rewards, and promotions.</p></div>
+                        <p class="hidden-xs">Drag a location onto your map to stay up to date on all deals, rewards, and promotions.</p>
+                    </div>
+                    <div class="row mainpage-row-item">
+                        <div class="clearfix"></div>
+                        <img class="img-circle  pull-left img-responsive mainpage-rowicon" src="../storage.googleapis.com/urbolabs.com/icons/ic_cart.png" alt="Urbo - build your world. By Urbolabs.">
+                        <h3>Get Rewarded! </h3>
+                        <div class="row visible-xs-block" style="padding:15px; padding-top:0px;"><p>Rack up points for check-ins and sharing deals, and spend them at any Urbo partner on rewards relevant to your interests.</p></div>
+                        <p class="hidden-xs">Rack up points for check-ins and sharing deals, and spend them at any Urbo partner on rewards relevant to your interests.</p>
+                    </div>
+                    <div class="row mainpage-row-item">
+                        <div class="clearfix"></div>
+                        <img class="img-circle  pull-left img-responsive mainpage-rowicon" src="../storage.googleapis.com/urbolabs.com/icons/ic_share.png" alt="Urbo - build your world. By Urbolabs.">
+                        <h3>Share the love!</h3>
+                        <div class="row visible-xs-block" style="padding:15px; padding-top:0px;"><p>Host events at your favorite places, and invite friends to join you!</p></div>
+                        <p class="hidden-xs">Host events at your favorite places, and invite friends to join you!</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-responsive" src="../storage.googleapis.com/urbolabs.com/mainpage_content_image.png" />
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-smll" role="document">
+                <div class="modal-content">
+                    <div class="modal-header bg-default text-center">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <h2 class="modal-title" id="myModalLabel">Subscribe to our Newsletter.</h2>
+                        <p>We promise we will not spam you.</p>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <form action="http://urbolabs.us16.list-manage.com/subscribe/post?u=e9ee14ee398afe767782854dd&amp;id=f3d9e427dc" method="post">
+                                <div class="form-group col-md-12">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">@</span>
+                                        <input type="email" class="form-control input-lg" name="EMAIL" class="required email" placeholder="Your email here" required>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <input type="submit" class="btn register-btn btn-lg btn-block" value="Subscribe">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <hr class="footer-color-hr">
+        <div class="footer">
+            <div class="container">
+                <div class="row-fluid">
+                    <div class="col-md-4">
+                        <ul style="list-style-type: none;">
+                            <li><a href="http://urbolabs.com/about">About us</a></li>
+                            <li><a href="http://urbolabs.com/careers">Careers</a></li>
+                            <li><a href="mailto:info@urbolabs.me">Contact & support</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul style="list-style-type: none;">
+                            <li><a href="http://urbolabs.com/press">Press releases</a></li>
+                            <li><a href="http://urbolabs.com/terms-of-use">Terms of use</a></li>
+                            <!--li><a href="/empty">How it works</a></li-->
+                            <!--li><a href="/empty">Accessibility</a></li-->
+                            <!--li><a href="/empty">Blog</a></li-->
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://www.facebook.com/urbolabs/" target="_blank" ><img src="../storage.googleapis.com/urbolabs.com/icons/ic_facebook.png" class="img-rounded"></a>
+                        <a href="https://twitter.com/urbolabs" target="_blank" ><img src="../storage.googleapis.com/urbolabs.com/icons/ic_twitter.png" class="img-rounded"></a>
+                        <!--a href="/became-partner" class="btn register-btn" style="color:#FFFFFF;">Become a Partner</a-->
+                        <!--p style="margin-top:20px;">
+
+                        </p-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="http://urbolabs.com/js/ws.js"></script>
+        <script src="http://urbolabs.com/js/bootstrap.min.js"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-84709174-1', 'auto');ga('send', 'pageview');
+            
+            $(document).ready(function() { 
+                var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+                
+                //registration
+                $("#submit-registration-btn").on("click", function(e) {
+                    e.preventDefault();
+                    processRegistration($("#registration-msg"), $("#disaply_name").val(), $("#email").val(), $("#pwd").val());
+                });
+                $("#submit-registration-btn-mob").on("click", function(e) {
+                    e.preventDefault();
+                    processRegistration($("#disaply_name_mob").val(), $("#email_mob").val(), $("#pwd_mob").val(), $("#registration-msg-mob"));
+                });
+                
+                //login
+                $("#submit-login-btn").on("click", function(e) {
+                    e.preventDefault();
+                    processLogin($("#useremail").val(), $("#userpassword").val(), $("#login-msg"));
+                });
+                $("#submit-login-btn-mob").on("click", function(e) {
+                    e.preventDefault();
+                    processLogin($("#useremail_mob").val(), $("#userpassword_mob").val(), $("#login-msg-mob"));
+                });
+                
+                function processRegistration(disaplynameValue, emailValue, passwordValue, msg) {
+                    var ok = true;
+                    msg.text("");
+                    
+                    if (!regex.test(emailValue)) {
+                        ok = false;
+                        msg.text("Please, enter valid email.");
+                    }
+                    
+                    if (disaplynameValue.length == 0 || passwordValue.length == 0) {
+                        ok = false;
+                        msg.text("Please, fill all text inputs.");
+                    }
+                    
+                    if (passwordValue.length < 6) {
+                        ok = false;
+                        msg.text("Password should be at least 6 symbols length.");
+                    }
+                    
+                    if (ok) {
+                        $.post("/process-registration", {
+                                displayname:disaplynameValue,
+                                email:emailValue, 
+                                password: passwordValue
+                            }, function(returnedData) {
+                                var answer = JSON.parse(returnedData);
+                                if (answer.code === 1) {
+                                    location.href = answer.data;
+                                } else {
+                                    msg.text(answer.data);
+                                }
+                            }).fail(function(){
+                                console.log("error");
+                            }
+                        );
+                    }
+                }
+                
+                function processLogin(emailValue, passwordValue, msg) {
+                    var ok = true;
+                    
+                    if (!regex.test(emailValue)) {
+                        ok = false;
+                        msg.text("Please, enter valid email.");
+                    }
+                    
+                    if (passwordValue.length == 0) {
+                        ok = false;
+                        msg.text("Please, fill email field.");
+                    }
+                    
+                    if (passwordValue.length < 6) {
+                        ok = false;
+                        msg.text("Password should be at least 6 symbols length.");
+                    }
+                    
+                    if (ok) {
+                        $.post("/process-login", {
+                                email:emailValue, 
+                                password: passwordValue
+                            }, function(returnedData) {
+                                var answer = JSON.parse(returnedData);
+                                if (answer.code === 1) {
+                                    location.href = answer.data;
+                                } else {
+                                    msg.text("Email or password is wrong.");
+                                }
+                            }).fail(function(){
+                                console.log("error");
+                            }
+                        );
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>
